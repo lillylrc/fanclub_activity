@@ -202,7 +202,6 @@ class getDetailAc extends activity{
             return $data['Timesale'];
         }    
     }
-    //image
     
     public function getdetail(){
         $datas = $this->getAllactivity();
@@ -399,8 +398,6 @@ class getDetailAc extends activity{
     
 </head>
 <body>
-    
-   
     <header>
         <?php 
         $uname = new getDetailMember();  
@@ -443,32 +440,17 @@ class getDetailAc extends activity{
     
     <div class="container text-center" id="box1">
             <?php
-              
                echo "ชื่อกิจกรรม:  ".$activity->getEventname()."<br>";
-
- 
                echo "ผู้จัด:  ".$member->getLUsername()."\t";
-       
                echo "ศิลปิน:  ".$activity->getartistName()."<br>";
-       
                echo "วันที่เริ่มงาน:  ".$activity->geteventDate()."\t";
-  
                echo "เวลาเริ่มงาน:  ".$activity->getTimeEvent()."<br>"; 
-
-              
-            
                echo "วันเปิดจองบูธ:  ".$activity->getDatesale()."\t";
-        
                echo "เวลาเปิดจองบูธ:  ".$activity->getTimesale()."<br>";
-
                echo "สถานที่:  ".$activity->getplace()."<br>";
- 
-               echo "รายเอียดอื่นๆ:  ".$activity->getdetail()."<br>";
-          
+               echo "รายเอียดอื่นๆ:  ".$activity->getdetail()."<br>";     
                echo "ประเภทกิจกรรม:  ".$activity->geteventType()."<br>";
-           
                echo "จำนวนบูธ:  ".$fan->getNumofBooth()."\t";
-        
                echo "จำนวนโซนบูธ:  ".$fan->getNumofZone();
    
             ?>
@@ -477,8 +459,7 @@ class getDetailAc extends activity{
     </div>
     
     <div class="contianner text-center" class="d-grid gap-2" >
-    <br>
-        
+    <br>  
  
     <?php   
 

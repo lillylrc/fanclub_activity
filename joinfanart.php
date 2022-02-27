@@ -1,6 +1,4 @@
-
 <?php
-
 
 class dbh{
     private $servername;
@@ -19,7 +17,6 @@ class dbh{
         return $conn;
 
     }
-
 }
         $join = new dbh();
         $con = $join->connect();
@@ -36,35 +33,5 @@ class dbh{
             header("location: detailfanart2.php");
 
         } 
-
-    
-    // $con = $this->connect();
-    // if(isset($_GET['fanartid']) and isset($_GET['uid'])){
-    //     $fid=$_GET['fanartid'];
-    //     $uid=$_GET['uid'];
-
-    //     $sql_ratco = "insert into`join_fanart`(Fanart_UID , IDfanart)
-    //     values ('$projectqualityrating_in', '$status')"; 
-    //     $result5 = mysqli_query($con,$sql_stuloca);
-
-    //     header("location: 2view.php");
-        
-        
-    // }   
-
-   
-    // if(isset($_GET['fanartid']) and isset($_GET['uid'])){
-    //     $fid=$_GET['fanartid'];
-    //     $uid=$_GET['uid'];
-
-    //     $sql_ratco = "insert into`join_fanart`(Fanart_UID , IDfanart)
-    //     values ('$projectqualityrating_in', '$status')"; 
-    //     $result5 = mysqli_query($con,$sql_stuloca);
-
-    //     header("location: 2view.php");
-        
-        
-    // }   
-    
 
 ?>

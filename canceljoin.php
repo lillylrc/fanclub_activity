@@ -1,7 +1,5 @@
 
 <?php
-
-
 class dbh{
     private $servername;
     private $username;
