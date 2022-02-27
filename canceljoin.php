@@ -31,7 +31,7 @@ class dbh{
             $result = mysqli_query($con,$sql_cancel);
             // echo $uid;
             // echo $fid;
-            header("location: 2view.php");
+            header("location: detailfanart.php");
 
         } 
 

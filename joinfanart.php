@@ -33,7 +33,7 @@ class dbh{
             // echo $uid;
             // echo $fid;
             //alert ("Done!");
-            header("location: 22view.php");
+            header("location: detailfanart2.php");
 
         } 
 
