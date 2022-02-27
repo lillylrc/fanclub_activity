@@ -117,6 +117,17 @@ class Member extends dbh{
             return $data;
         }
     }
+    public function getGname(){
+        $sql = "SELECT * FROM member where NationnalID='1234567891234'";
+        $result = $this->connect()->query($sql);
+        $numRows = $result->num_rows;
+        if ($numRows > 0){
+            while ($row = $result->fetch_assoc()){
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
 
 }
 
@@ -133,6 +144,13 @@ class getDetailMember extends Member{
         $datas = $this->getGMember();
         foreach ($datas as $data){
             return $data['UID'];
+
+        }
+    }
+    public function getGusername(){
+        $datas = $this->getGname();
+        foreach ($datas as $data){
+            return $data['Username'];
 
         }
     }
@@ -384,6 +402,9 @@ class getDetailAc extends activity{
     
    
     <header>
+        <?php 
+        $uname = new getDetailMember();  
+        ?>
 
             <center><a href="#" class="logo">FANCLUB</a></center>
             <ul>
@@ -391,6 +412,8 @@ class getDetailAc extends activity{
                 <li><a href="#">Artist</a></li>
                 <li><a href="#">Event</a></li>
                 <li><a href="#"  >Profile</a></li>
+
+                <li><a href="#"  > ยินดีต้อนรับ<?php echo $uname->getGusername(); ?></a></li>
             </ul>
     </header>
     
